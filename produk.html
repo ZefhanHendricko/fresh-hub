@@ -16,19 +16,33 @@
     <!-- Navbar -->
 <div class="main">
     <header class="navbar">
-       <div class="logo">
-          <img src="gambar/logo.png" alt="Fresh Hub" />
-        </div>
 
-      <nav>
-        <a href="index.html">←</a>
-        <a href="produk.html"></a>
-        <a href="keranjang.html"><img src="gambar/cart.png" class="icon"></a>
-      </nav>
-      <div class="search-box">
-        <input type="text" placeholder="Cari sayuran..." />
-      </div>
-    </header>
+  <!-- Kiri -->
+  <div class="nav-left">
+
+    <a href="index.html" class="back-btn">
+      ←
+    </a>
+
+    <img src="gambar/logo.png" class="logo">
+
+  </div>
+
+  <!-- Tengah -->
+  <div class="search-box">
+    <input type="text" placeholder="Cari sayuran...">
+  </div>
+
+  <!-- Kanan -->
+  <div class="nav-icons">
+
+    <a href="keranjang.html">
+      <img src="gambar/cart.png" class="icon">
+    </a>
+
+  </div>
+
+</header>
 
     <!-- Judul Halaman -->
 
@@ -50,7 +64,7 @@
           <p class="harga">Rp 5.000</p>
 
           <button onclick="addToCart('Bayam', 5000)">
-            Tambah ke Keranjang
+           🛒
           </button>
         </div>
 
@@ -64,7 +78,7 @@
           <p class="harga">Rp 8.000</p>
 
           <button onclick="addToCart('Wortel', 8000)">
-            Tambah ke Keranjang
+            🛒
           </button>
         </div>
 
@@ -78,7 +92,7 @@
           <p class="harga">Rp 12.000</p>
 
           <button onclick="addToCart('Kentang', 12000)">
-            Tambah ke Keranjang
+            🛒
           </button>
         </div>
 
@@ -92,7 +106,7 @@
           <p class="harga">Rp 9.000</p>
 
           <button onclick="addToCart('Tomat', 9000)">
-            Tambah ke Keranjang
+            🛒
           </button>
         </div>
 
@@ -106,7 +120,7 @@
           <p class="harga">Rp 6.000</p>
 
           <button onclick="addToCart('Kangkung', 6000)">
-            Tambah ke Keranjang
+            🛒
           </button>
         </div>
 
@@ -120,24 +134,12 @@
           <p class="harga">Rp 25.000</p>
 
           <button onclick="addToCart('Cabai Merah', 25000)">
-            Tambah ke Keranjang
+            🛒
           </button>
         </div>
       </div>
 
-      <!-- Total Belanja -->
-
-      <div class="total-box">
-        <h3>
-          Total Belanja: Rp
-          <span id="total">0</span>
-        </h3>
-
-        <a href="keranjang.html" class="btn"> Lihat Keranjang </a>
-      </div>
-    </section>
-
-    <!-- Footer -->
+  
 
     <footer>
       <p>© 2026 Fresh Hub</p>
