@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="id">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Produk - Fresh Hub</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+<div class="main">
+    <header class="navbar">
+       <div class="logo">
+          <img src="gambar/logo.png" alt="Fresh Hub" />
+        </div>
+
+      <nav>
+        <a href="index.html">←</a>
+        <a href="produk.html"></a>
+        <a href="keranjang.html"><img src="gambar/cart.png" class="icon"></a>
+      </nav>
+      <div class="search-box">
+        <input type="text" placeholder="Cari sayuran..." />
+      </div>
+    </header>
+
+    <!-- Judul Halaman -->
+
+    <section class="produk-section">
+      <h2>Produk Sayuran Segar</h2>
+
+      <p>Pilih sayuran segar favorit Anda</p>
+
+      <!-- Grid Produk -->
+
+      <div class="produk">
+        <!-- Produk 1 -->
+
+        <div class="card">
+          <img src="gambar/bayam.jpg" />
+
+          <h3>Bayam</h3>
+
+          <p class="harga">Rp 5.000</p>
+
+          <button onclick="addToCart('Bayam', 5000)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+
+        <!-- Produk 2 -->
+
+        <div class="card">
+          <img src="gambar/wortel.jpg" />
+
+          <h3>Wortel</h3>
+
+          <p class="harga">Rp 8.000</p>
+
+          <button onclick="addToCart('Wortel', 8000)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+
+        <!-- Produk 3 -->
+
+        <div class="card">
+          <img src="gambar/kentang.jpg" />
+
+          <h3>Kentang</h3>
+
+          <p class="harga">Rp 12.000</p>
+
+          <button onclick="addToCart('Kentang', 12000)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+
+        <!-- Produk 4 -->
+
+        <div class="card">
+          <img src="gambar/tomat.jpg" />
+
+          <h3>Tomat</h3>
+
+          <p class="harga">Rp 9.000</p>
+
+          <button onclick="addToCart('Tomat', 9000)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+
+        <!-- Produk 5 -->
+
+        <div class="card">
+          <img src="gambar/kangkung.jpg" />
+
+          <h3>Kangkung</h3>
+
+          <p class="harga">Rp 6.000</p>
+
+          <button onclick="addToCart('Kangkung', 6000)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+
+        <!-- Produk 6 -->
+
+        <div class="card">
+          <img src="gambar/cabai.jpg" />
+
+          <h3>Cabai Merah</h3>
+
+          <p class="harga">Rp 25.000</p>
+
+          <button onclick="addToCart('Cabai Merah', 25000)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+      </div>
+
+      <!-- Total Belanja -->
+
+      <div class="total-box">
+        <h3>
+          Total Belanja: Rp
+          <span id="total">0</span>
+        </h3>
+
+        <a href="keranjang.html" class="btn"> Lihat Keranjang </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 Fresh Hub</p>
+    </footer>
+  </body>
+</html>

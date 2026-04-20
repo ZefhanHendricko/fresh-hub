@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Keranjang - Fresh Hub</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body onload="displayCart()">
+    <!-- Navbar -->
+    <div class="main">
+    <header class="navbar">
+      <div class="logo">
+ <img src="gambar/logo.png" alt="Fresh Hub" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="produk.html">Produk</a>
+        <a href="keranjang.html"><img src="gambar/cart.png" class="icon" /> </a>
+      </nav>
+      <div class="search-box">
+        <input type="text" placeholder="Cari sayuran..." />
+      </div>
+    </header>
+
+    <!-- Halaman Keranjang -->
+
+    <section class="keranjang-section">
+      <h2>Keranjang Belanja</h2>
+
+      <table border="1" width="80%" align="center">
+        <tr>
+          <th>Nama Produk</th>
+          <th>Harga</th>
+        </tr>
+
+        <tbody id="cart-items"></tbody>
+      </table>
+
+      <br />
+
+      <h3>
+        Total: Rp
+        <span id="total">0</span>
+      </h3>
+
+      <br />
+
+      <button onclick="checkoutWA()">Checkout via WhatsApp</button>
+
+      <button onclick="clearCart()">Hapus Keranjang</button>
+    </section>
+
+    <footer>
+      <p>© 2026 Fresh Hub</p>
+    </footer>
+  </body>
+</html>
