@@ -16,8 +16,6 @@ body {
   background: #f5fff5;
 }
 
-/* NAVBAR */
-
 .navbar {
   display: flex;
 
@@ -36,8 +34,6 @@ body {
   border-bottom-right-radius: 20px;
 }
 
-/* kiri */
-
 .nav-left {
   display: flex;
 
@@ -46,13 +42,9 @@ body {
   gap: 8px;
 }
 
-/* logo */
-
 .logo {
   width: 90px;
 }
-
-/* back */
 
 .back-btn {
   color: white;
@@ -61,8 +53,6 @@ body {
 
   text-decoration: none;
 }
-
-/* search */
 
 .search-box {
   flex: 1;
@@ -81,8 +71,6 @@ body {
 
   outline: none;
 }
-
-/* icon */
 
 .nav-icons {
   display: flex;
@@ -105,8 +93,6 @@ nav a {
   margin: 10px;
   text-decoration: none;
 }
-
-/* Hero */
 
 .hero {
   height: 400px;
@@ -139,8 +125,6 @@ nav a {
 
   border-radius: 5px;
 }
-
-/* Produk */
 
 .preview {
   padding: 40px;
@@ -186,7 +170,6 @@ nav a {
 
   border-radius: 8px;
 }
-/* Footer */
 
 footer {
   background: #2ecc71;
@@ -198,7 +181,6 @@ footer {
 
   margin-top: 30px;
 }
-/* Halaman Produk */
 
 .produk-section {
   padding: 40px;
@@ -261,8 +243,6 @@ button:hover {
   border-radius: 8px;
 }
 
-/* Tentang */
-
 .tentang-section {
   padding: 40px;
   max-width: 800px;
@@ -274,8 +254,6 @@ button:hover {
 .tentang-section ul {
   margin-left: 20px;
 }
-
-/* Kontak */
 
 .kontak-section {
   padding: 40px;
@@ -303,8 +281,6 @@ button:hover {
   font-size: 14px;
 }
 
-/* HEADER APP STYLE */
-
 .navbar {
   display: flex;
   align-items: center;
@@ -315,13 +291,9 @@ button:hover {
   padding: 10px 15px;
 }
 
-/* Logo */
-
 .logo img {
   height: 40px;
 }
-
-/* Search Tengah */
 
 .search-box {
   flex: 1;
@@ -342,8 +314,6 @@ button:hover {
   font-size: 14px;
 }
 
-/* Icon kanan */
-
 .nav-icons {
   display: flex;
 
@@ -361,11 +331,9 @@ button:hover {
 }
 
 .navbar {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
-
-/* MODE MOBILE APP */
 
 body {
   margin: 0;
@@ -379,14 +347,12 @@ body {
   padding: 15px;
 }
 
-/* FRAME HP */
-
 .main {
-  width: 375px; /* ukuran layar HP */
+  width: 375px;
   max-width: 100%;
   background: #f5f5f5;
   min-height: 100vh;
-  margin: 0 auto; /* center */
+  margin: 0 auto;
 }
 
 section {
@@ -408,8 +374,6 @@ section {
 
   margin-top: auto;
 }
-
-/* PROMO SECTION */
 
 .promo-section {
   padding: 15px;

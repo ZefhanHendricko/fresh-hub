@@ -1,4 +1,3 @@
-// Ambil data cart dari localStorage
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price, image) {
@@ -15,7 +14,6 @@ function addToCart(name, price, image) {
   alert("Produk ditambahkan ke keranjang 🛒");
 }
 
-// Tampilkan isi keranjang
 function displayCart() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -54,7 +52,6 @@ Rp ${item.price}
   document.getElementById("total").innerText = total;
 }
 
-// Checkout WhatsApp
 function checkoutWA() {
   let message = "Pesanan Fresh Hub:%0A";
 
@@ -73,7 +70,6 @@ function checkoutWA() {
   window.open("https://wa.me/" + nomor + "?text=" + message);
 }
 
-// Hapus keranjang
 function clearCart() {
   localStorage.removeItem("cart");
 
