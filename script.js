@@ -77,3 +77,66 @@ function clearCart() {
 
   displayCart();
 }
+
+function goToCheckout() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  if (cart.length === 0) {
+    alert("Keranjang masih kosong!");
+    return;
+  }
+
+  window.location.href = "checkout.html";
+}
+
+function displayCheckout() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  let container = document.getElementById("checkout-items");
+
+  let total = 0;
+
+  container.innerHTML = "";
+
+  cart.forEach(function (item) {
+    container.innerHTML += `
+
+<div class="checkout-item">
+
+<img src="${item.image}"
+width="60">
+
+${item.name}
+- Rp ${item.price}
+
+</div>
+
+`;
+
+    total += item.price;
+  });
+
+  document.getElementById("checkout-total").innerText = total;
+}
+
+function prosesCheckout() {
+  let nama = document.getElementById("nama").value;
+
+  let alamat = document.getElementById("alamat").value;
+
+  let hp = document.getElementById("hp").value;
+
+  let metode = document.getElementById("metode").value;
+
+  if (nama === "" || alamat === "" || hp === "") {
+    alert("Lengkapi data terlebih dahulu!");
+
+    return;
+  }
+
+  alert("Pesanan berhasil dibuat!\n" + "Metode: " + metode);
+
+  localStorage.removeItem("cart");
+
+  window.location.href = "index.html";
+}

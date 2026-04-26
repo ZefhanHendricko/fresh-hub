@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Checkout - Fresh Hub</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body onload="displayCheckout()">
+    <div class="main">
+      <h2>Checkout Pesanan</h2>
+
+      <!-- LIST PRODUK -->
+
+      <div id="checkout-items"></div>
+
+      <h3>
+        Total: Rp
+        <span id="checkout-total">0</span>
+      </h3>
+
+      <hr />
+
+      <!-- FORM PEMBELI -->
+
+      <h3>Data Pembeli</h3>
+
+      <input type="text" id="nama" placeholder="Nama Lengkap" />
+
+      <input type="text" id="alamat" placeholder="Alamat Pengiriman" />
+
+      <input type="text" id="hp" placeholder="Nomor HP" />
+
+      <h3>Pembayaran</h3>
+
+      <select id="metode">
+        <option value="COD">COD (Bayar di Tempat)</option>
+
+        <option value="Transfer">Transfer Bank</option>
+      </select>
+
+      <br /><br />
+
+      <button onclick="prosesCheckout()">Buat Pesanan</button>
+    </div>
+  </body>
+</html>
