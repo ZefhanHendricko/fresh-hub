@@ -1,37 +1,54 @@
 // Ambil data cart dari localStorage
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Tambah produk ke keranjang
-function addToCart(nama, harga) {
+function addToCart(name, price, image) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
   cart.push({
-    nama: nama,
-    harga: harga,
+    name: name,
+    price: price,
+    image: image,
   });
 
   localStorage.setItem("cart", JSON.stringify(cart));
 
-  alert("Produk ditambahkan ke keranjang!");
+  alert("Produk ditambahkan ke keranjang 🛒");
 }
 
 // Tampilkan isi keranjang
 function displayCart() {
-  let cartItems = document.getElementById("cart-items");
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  let cartTable = document.getElementById("cart-items");
 
   let total = 0;
 
-  if (!cartItems) return;
+  cartTable.innerHTML = "";
 
-  cartItems.innerHTML = "";
+  cart.forEach(function (item) {
+    cartTable.innerHTML += `
 
-  cart.forEach((item) => {
-    let row = document.createElement("tr");
+<tr>
 
-    row.innerHTML =
-      "<td>" + item.nama + "</td>" + "<td>Rp " + item.harga + "</td>";
+<td>
+<img src="${item.image}"
+width="60"
+style="border-radius:8px;">
+</td>
 
-    cartItems.appendChild(row);
+<td>
+${item.name}
+</td>
 
-    total += item.harga;
+<td>
+Rp ${item.price}
+</td>
+
+</tr>
+
+`;
+
+    total += item.price;
   });
 
   document.getElementById("total").innerText = total;

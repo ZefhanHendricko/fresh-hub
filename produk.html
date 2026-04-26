@@ -13,11 +13,11 @@
   </head>
 
   <body>
-    <!-- Navbar -->
+    
 <div class="main">
     <header class="navbar">
 
-  <!-- Kiri -->
+ 
   <div class="nav-left">
 
     <a href="index.html" class="back-btn">
@@ -28,12 +28,12 @@
 
   </div>
 
-  <!-- Tengah -->
+ 
   <div class="search-box">
     <input type="text" placeholder="Cari sayuran...">
   </div>
 
-  <!-- Kanan -->
+ 
   <div class="nav-icons">
 
     <a href="keranjang.html">
@@ -44,18 +44,17 @@
 
 </header>
 
-    <!-- Judul Halaman -->
+  
 
     <section class="produk-section">
       <h2>Produk Sayuran Segar</h2>
 
       <p>Pilih sayuran segar favorit Anda</p>
 
-      <!-- Grid Produk -->
+     
 
       <div class="produk">
-        <!-- Produk 1 -->
-
+      
         <div class="card">
           <img src="gambar/bayam.jpg" />
 
@@ -63,7 +62,11 @@
 
           <p class="harga">Rp 5.000</p>
 
-          <button onclick="addToCart('Bayam', 5000)">
+          <button onclick="addToCart(
+         'Bayam',
+        5000,
+        'gambar/bayam.jpg'
+        )">
            🛒
           </button>
         </div>
@@ -77,7 +80,11 @@
 
           <p class="harga">Rp 8.000</p>
 
-          <button onclick="addToCart('Wortel', 8000)">
+          <button onclick="addToCart(
+        'Wortel',
+        8000,
+        'gambar/wortel.jpg'
+         )">
             🛒
           </button>
         </div>
@@ -91,7 +98,11 @@
 
           <p class="harga">Rp 12.000</p>
 
-          <button onclick="addToCart('Kentang', 12000)">
+          <button onclick="addToCart(
+        'Kentang',
+         12000,
+        'gambar/kentang.jpg'
+          )">
             🛒
           </button>
         </div>
@@ -105,12 +116,16 @@
 
           <p class="harga">Rp 9.000</p>
 
-          <button onclick="addToCart('Tomat', 9000)">
+          <button onclick="addToCart(
+        'Tomat',
+        9000,
+        'gambar/tomat.jpg'
+)">
             🛒
           </button>
         </div>
 
-        <!-- Produk 5 -->
+        
 
         <div class="card">
           <img src="gambar/kangkung.jpg" />
@@ -119,13 +134,16 @@
 
           <p class="harga">Rp 6.000</p>
 
-          <button onclick="addToCart('Kangkung', 6000)">
+          <button onclick="addToCart(
+        'Kangkung',
+         6000,
+        'gambar/kangkung.jpg'
+         )">
             🛒
           </button>
         </div>
 
-        <!-- Produk 6 -->
-
+        
         <div class="card">
           <img src="gambar/cabai.jpg" />
 
@@ -133,7 +151,11 @@
 
           <p class="harga">Rp 25.000</p>
 
-          <button onclick="addToCart('Cabai Merah', 25000)">
+          <button onclick="addToCart(
+        'Cabai Merah',
+         25000,
+        'gambar/cabai.jpg'
+         )">
             🛒
           </button>
         </div>
