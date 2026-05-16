@@ -140,3 +140,41 @@ function prosesCheckout() {
 
   window.location.href = "index.html";
 }
+
+function searchProduct() {
+  let input = document.getElementById("searchInput");
+
+  let filter = input.value.toLowerCase();
+
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach(function (card) {
+    let title = card.querySelector("h3");
+
+    let text = title.innerText.toLowerCase();
+
+    if (text.includes(filter)) {
+      card.style.display = "flex";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+function searchProduct() {
+  let input = document.getElementById("searchInput");
+
+  let filter = input.value.toLowerCase();
+
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach(function (card) {
+    let productName = card.querySelector("h3").innerText.toLowerCase();
+
+    if (productName.includes(filter)) {
+      card.style.display = "flex";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
